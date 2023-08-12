@@ -1,6 +1,38 @@
 
 # SE_lab_4
 
+##ریفکتور ها
+
+ریفکتور strategy یا replace conditional with polymorphism
+اینجا ما switch case داخل کلاس Address را برداشته و به جای آن یک کلاس Strategy تعریف کردیم. با این تغییر در صورتی که در هر کدام از آن caseها بخواهد کاری انجام شود یا کاری اضافه شود تنها در کلاس‌های strategy مربوطه اضافه می‌شود.
+
+
+
+ریفکتور seperate query modifier
+در این بخش از آنجا که هم مقدار lastDateAddress تغییر می‌کرد و هم برگشت داده می‌شد دو عملکرد را در قالب دو متد جدا کردیم.
+
+
+
+ریفکتور self encapsulated field
+بر اساس ریفکتور self encapsulated fields دو استفاده‌ی فیلد‌های پرایوت addressType و varType را به صورت getter درآوردیم.
+
+
+
+ریفکتور loose coupling
+در چندین کلاس این مشکل وجود داشت که ArrayList تعریف شده بود در صورتی که این DIP را نقض می‌کند و هنگامی که می‌خواهیم مقدار دهی کنیم باید تایپ آن مشخص شود.
+
+
+
+ریفکتور inline temp
+یکی از local temp variableها را که تنها تعریف و بعد استفاده شده بود را به صورت در خط استفاده کردیم.
+
+
+
+ریفکتور facade
+در کلاس CodeGnerator به سرویس های مختلفی رجوع شده بود این اتفاق در کلاس Parser به سرویس‌های CodeGenerator و Lexical Analysis نیز افتاده بود که آن ها را به یک کلاس مجزای ParserFacade منتقل کردیم که برای اعمال دیزاین پترن Facade است. به منظور اعمال الگو facade برای کلاس main بک کلاس ParserStarterFacade تعریف می‌کنیم که از داخل main آن را صدا بزند.
+
+---
+
 ## پرسش‌ها
 
 1. هر یک از مفاهیم زیر را در حد یک خط توضیح دهید.
